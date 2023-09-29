@@ -77,7 +77,7 @@ controller_workflows:
         unified_job_template: 000-List-to-String
         # always_nodes:
         #   - node202
-        success_nodes:
+        # success_nodes:
           # - node202
       #     - approval101
       # - identifier: approval101
