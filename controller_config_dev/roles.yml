@@ -1,5 +1,9 @@
 ---
 controller_roles:
+  # add cac-user-101to the team cac-team-101
+  - user: cac-user-101
+    team: cac-team-101
+    role: member
   - inventory: Cac-Demo-Inventory
     team: cac-team-101
     role: admin
