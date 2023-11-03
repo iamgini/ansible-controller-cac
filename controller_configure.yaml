@@ -155,3 +155,14 @@
       when: controller_workflows is defined
       tags:
         - workflows
+
+    - name: Add Roles 
+      ansible.builtin.include_role:
+        name: controller-roles
+        apply:
+          tags: roles
+      vars:
+        # controller_organizations: "{{ controller_organization_list }}"
+      when: controller_roles is defined
+      tags:
+        - roles
