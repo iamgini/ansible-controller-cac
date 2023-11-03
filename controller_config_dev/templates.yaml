@@ -41,7 +41,7 @@ controller_templates:
     #       default: node-01.example.com
     #       choices: ''
     #       new_question: true
- - name: 001-List-to-String-CaC
+  - name: 001-List-to-String-CaC
     description: Another Simple template
     job_type: run
     inventory: Cac-Demo-Inventory
