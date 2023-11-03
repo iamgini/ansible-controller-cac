@@ -4,9 +4,12 @@ controller_roles:
   - user: cac-user-101
     target_team: cac-team-101
     role: member
+  
+  # enable cac-team-101 team access Cac-Demo-Inventory
   - inventory: Cac-Demo-Inventory
     team: cac-team-101
     role: admin
+    
   - inventory: Cac-Demo-Inventory
     team: cac-team-102
     role: use
