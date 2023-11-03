@@ -16,7 +16,7 @@ controller_projects:
 
   - name: AAP-Use-Case-Demos-Cac
     scm_type: git
-    scm_url: https://github.com/ginigangadharan/ansible-aap-demos
+    scm_url: https://github.com/iamgini/ansible-aap-demos
     scm_branch: main
     scm_clean: false
     description: AAP Demos Created using CaC
