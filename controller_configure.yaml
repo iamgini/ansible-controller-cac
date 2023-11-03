@@ -114,14 +114,14 @@
       tags:
         - inventories
 
-    # - name: Add groups
-    #   ansible.builtin.include_role:
-    #     name: controller-groups
-    #     apply:
-    #       tags: groups
-    #   when: controller_groups is defined
-    #   tags:
-    #     - groups
+    - name: Add groups
+      ansible.builtin.include_role:
+        name: controller-groups
+        apply:
+          tags: groups
+      when: controller_groups is defined
+      tags:
+        - groups
 
     - name: Add managed hosts
       ansible.builtin.include_role:
