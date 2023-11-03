@@ -13,4 +13,15 @@ controller_projects:
     wait: true
     update_project: true
     # credential: GH-Dev
+
+  - name: AAP Use Case Demos-Cac
+    scm_type: git
+    scm_url: https://github.com/ginigangadharan/ansible-aap-demos
+    scm_branch: main
+    scm_clean: false
+    description: AAP Demos Created using CaC
+    organization: Cac-Demo-Org
+    wait: true
+    update_project: true
+    # credential: GH-Dev
 ...
