@@ -79,14 +79,14 @@ controller_templates:
     #       new_question: true
 
 
-  - name: Custom Module Demo-CaC
+  - name: Custom-Module-Demo-CaC
     description: 
     job_type: run
     inventory: Cac-Demo-Inventory
     # labels:
     #   - Dev
     # credentials: Dev Access
-    project: AAP Use Case Demos-Cac
+    project: AAP-Use-Case-Demos-Cac
     playbook: ansible-custom-module-basic/3-hello-python.yaml
     verbosity: 0
     extra_vars:
