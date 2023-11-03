@@ -188,3 +188,12 @@
       when: controller_inventory_sources is defined
       tags:
         - inventorysources
+
+    - name: Add Schedules
+      ansible.builtin.include_role:
+        name: controller-schedules
+        apply:
+          tags: schedules
+      when: controller_schedules is defined
+      tags:
+        - schedules
