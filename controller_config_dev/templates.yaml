@@ -79,26 +79,26 @@ controller_templates:
     #       new_question: true
 
 
-  - name: Custom-Module-Demo-CaC
-    description: 
-    job_type: run
-    inventory: Cac-Demo-Inventory
-    # labels:
-    #   - Dev
-    # credentials: Dev Access
-    project: AAP-Use-Case-Demos-Cac
-    playbook: ansible-custom-module-basic/3-hello-python.yaml
-    verbosity: 0
-    extra_vars:
-      # target_hosts: localhost
-    ask_inventory_on_launch: false
-    ask_execution_environment_on_launch: false
-    ask_forks_on_launch: false
-    ask_instance_groups_on_launch: false
-    ask_job_slice_count_on_launch: false
-    ask_labels_on_launch: false
-    ask_timeout_on_launch: false
-    ask_limit_on_launch: false
-    prevent_instance_group_fallback: false
+  # - name: Custom-Module-Demo-CaC
+  #   description: 
+  #   job_type: run
+  #   inventory: Cac-Demo-Inventory
+  #   # labels:
+  #   #   - Dev
+  #   # credentials: Dev Access
+  #   project: AAP-Use-Case-Demos-Cac
+  #   playbook: ansible-custom-module-basic/3-hello-python.yaml
+  #   verbosity: 0
+  #   extra_vars:
+  #     # target_hosts: localhost
+  #   ask_inventory_on_launch: false
+  #   ask_execution_environment_on_launch: false
+  #   ask_forks_on_launch: false
+  #   ask_instance_groups_on_launch: false
+  #   ask_job_slice_count_on_launch: false
+  #   ask_labels_on_launch: false
+  #   ask_timeout_on_launch: false
+  #   ask_limit_on_launch: false
+  #   prevent_instance_group_fallback: false
 ...
 
