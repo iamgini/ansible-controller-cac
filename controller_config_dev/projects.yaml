@@ -14,6 +14,17 @@ controller_projects:
     update_project: true
     # credential: GH-Dev
 
+  - name: NEW PROJECT FOR DEMO
+    scm_type: git
+    scm_url: https://github.com/iamgini/ansible-real-life
+    scm_branch: main
+    scm_clean: false
+    description: Demo Project Created using CaC
+    organization: Cac-Demo-Org
+    wait: true
+    update_project: true
+    # credential: GH-Dev
+    
   - name: AAP-Use-Case-Demos-Cac
     scm_type: git
     scm_url: https://github.com/iamgini/ansible-aap-demos
