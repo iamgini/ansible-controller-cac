@@ -2,8 +2,17 @@
 controller_settings_individuale:
   # - name: AWX_TASK_ENV
   #   value: {'GIT_SSL_NO_VERIFY': 'True'}
-  # - name: AUTH_LDAP_SERVER_URI
-  #   value: "ldap://ldap.example.com"
+
+  ################### LDAP ############################
+  - name: AUTH_LDAP_SERVER_URI
+    value: "ldap://WIN2019.example.com:636"
+  
+  - name: AUTH_LDAP_BIND_DN
+    value: "CN=josie,CN=users,DC=website,DC=com"
+  
+  - name: AUTH_LDAP_BIND_PASSWORD
+    value: "yoursecretbindpassword"
+
   # - name: AUTH_LDAP_USER_DN_TEMPLATE
   #   value: "uid=%(user)s,ou=Users,dc=example,dc=com"
   # - name: AUTH_LDAP_GROUP_SEARCH
@@ -43,6 +52,9 @@ controller_settings_individuale:
   #    }
   #   }'
 
+
+
+
   # - name: AUTH_LDAP_1_USER_SEARCH
   #   value: '[ "OU=AAP,DC=example,DC=com","SCOPE_SUBTREE", "(sAMAccountName=%(user)s) ]"'
   - name: AUTH_LDAP_1_SERVER_URI
@@ -77,15 +89,15 @@ controller_settings_individuale:
   # This maps all users to satellite-qe team and we need to add this team to all resources we create for them
   # that way users can access the things that their team has permissions for
   
-  # - name: AUTH_LDAP_1_TEAM_MAP
-  #   value: '{
-  #     "satellite-qe": {
-  #       "organization": "Satellite",
-  #       "users": true
-  #     },
-  #     "satlab-admin": {
-  #       "organization": "Satellite",
-  #       "users": "cn=sat-qe-infra,ou=adhoc,ou=managedGroups,dc=example,dc=com"
-  #     }
-  #   }'
+  - name: AUTH_LDAP_TEAM_MAP
+    value: '{
+      "satellite-qe": {
+        "organization": "Satellite",
+        "users": true
+      },
+      "satlab-admin": {
+        "organization": "Satellite",
+        "users": "cn=sat-qe-infra,ou=adhoc,ou=managedGroups,dc=example,dc=com"
+      }
+    }'
 ...
